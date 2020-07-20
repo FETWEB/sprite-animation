@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprite Animation</title>
+</head>
+<style>
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+body{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+}
+.logo {
+    background: url("/img/meteor.png") 0 0 no-repeat;
+    width: 800px;
+    height: 450px;
+   
+    margin: auto;
+}
+.logo:hover{
+    -webkit-animation: logo 2s steps(134, end) ;
+            animation: logo 2s steps(134, end) ;
+    -moz-animation: logo 2s steps(134, end) ;
+}
+@-webkit-keyframes logo {
+	  from {background-position: 0 0;}
+	  to {background-position: -107200px 0;}
+}
+@keyframes logo {
+	  from {background-position: 0 0;}
+	  to {background-position: -107200px 0;}
+}
+</style>
+<body>
+    <div class="logo"></div>
+</body>
+</html>
